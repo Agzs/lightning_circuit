@@ -14,6 +14,7 @@ enum Test {
 fn main() {
     println!("valid: ");
     gen(Valid);
+    println!("=================================================");
     println!("using AND instead of XOR: ");
     gen(AndInsteadOfXor);
 }
@@ -21,6 +22,7 @@ fn main() {
 fn gen(test: Test) {
     let r2: Vec<u8> = {
         let mut hash = Sha256::new();
+        //print!("SCIPR.as_ref() = 0x");print_u8("SCIPR".as_ref());
         hash.input("SCIPR".as_ref());
         hash.result_bytes()
     };
@@ -54,11 +56,21 @@ fn gen(test: Test) {
         hash.result_bytes()
     };
 
+    println!("");    
     print!("h1_bv = int_list_to_bits("); into_bin(&h1);
     print!("h2_bv = int_list_to_bits("); into_bin(&h2);
     print!("x_bv = int_list_to_bits("); into_bin(&x);
     print!("r1_bv = int_list_to_bits("); into_bin(&r1);
     print!("r2_bv = int_list_to_bits("); into_bin(&r2);
+
+    //print!("======= Hex start ========\n");
+    println!(""); 
+    print!("r1_bv = 0x");into_hex(&r1);
+    print!("h1_bv = 0x");into_hex(&h1);
+    print!("x_bv = 0x");into_hex(&x);
+    print!("r2_bv = 0x");into_hex(&r2);
+    print!("h2_bv = 0x");into_hex(&h2);
+    //print!("======= Hex end ========\n");
 }
 
 fn into_bin(a: &Vec<u8>) {
@@ -71,4 +83,18 @@ fn into_bin(a: &Vec<u8>) {
                 );
     }
     println!("}}, 8);");
+}
+
+fn print_u8(input: &[u8]) {
+    for i in input.iter() {
+       print!("{:x}", i);
+    }
+    println!(""); 
+}
+
+fn into_hex(a: &Vec<u8>) {
+    for i in a.iter() {
+       print!("{:x}", i);
+    }
+    println!(""); 
 }

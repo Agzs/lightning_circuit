@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "*.hpp": "cpp",
+        "*.ipp": "cpp",
+        "slist": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "system_error": "cpp",
+        "utility": "cpp",
+        "chrono": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp"
+    }
+}
