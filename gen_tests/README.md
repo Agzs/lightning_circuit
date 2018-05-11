@@ -1,5 +1,4 @@
-## Install rustc
-###  Building from Source (ubuntu 16.04)
+###  Run rustc test (ubuntu 16.04)
 
 1. Make sure you have installed the dependencies:
 
@@ -26,7 +25,7 @@
 
    There will show 
 
-3. Build and install:
+3. Build and install rustc:
 
     ```sh
     $ ./configure
@@ -45,22 +44,22 @@
     > ***Note:*** You may need to run again if you meet some error about 
     > git or curl. Choosing ubuntu 32bits may be better if you still meet
     > some else errors after that. 
+    
 
-### Install cargo
+4. Install cargo:
 
-    you can install by:
     ```sh
     $ sudo apt-get install cargo
     ```
 
-## run test
+5. Run test:
 
     ```sh
     $ cd lightning_circuit/gen_tests
     $ cargo build
     $ cargo run
     ```
-## rust doc
+### rust doc
     [Rust (Chinese-version)](https://kaisery.github.io/trpl-zh-cn/)
 
     [Rust library](https://doc.rust-lang.org/0.11.0/rustc/util/sha2/struct.Sha256.html?search=as_ref)
