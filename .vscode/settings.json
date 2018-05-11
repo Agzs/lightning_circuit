@@ -10,6 +10,7 @@
         "utility": "cpp",
         "chrono": "cpp",
         "iostream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "typeinfo": "cpp"
     }
 }
