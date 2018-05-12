@@ -40,7 +40,6 @@
 
 [Cargo]: https://github.com/rust-lang/cargo
 
-
     > ***Note:*** You may need to run again if you meet some error about 
     > git or curl. Choosing ubuntu 32bits may be better if you still meet
     > some else errors after that. 
