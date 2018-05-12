@@ -8,13 +8,12 @@
    * `curl`
    * `git`
 
-2. Clone the [source] with `git`:
+2. Clone the [source](https://github.com/rust-lang/rust.git) with `git`:
 
    ```sh
    $ git clone https://github.com/rust-lang/rust.git
    $ cd rust
    ```
-[source]: https://github.com/rust-lang/rust.git
 
 3. Switch and check branch:
 
@@ -35,10 +34,8 @@
 
     When complete, `make install` will place several programs into
     `/usr/local/bin`: `rustc`, the Rust compiler, and `rustdoc`, the
-    API-documentation tool. This install does not include [Cargo],
+    API-documentation tool. This install does not include [Cargo](https://github.com/rust-lang/cargo),
     Rust's package manager, which you may also want to build.
-
-[Cargo]: https://github.com/rust-lang/cargo
 
     > ***Note:*** You may need to run again if you meet some error about 
     > git or curl. Choosing ubuntu 32bits may be better if you still meet
