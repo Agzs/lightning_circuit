@@ -12,5 +12,8 @@
         "iostream": "cpp",
         "vector": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "C_Cpp.dimInactiveRegions": false,
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.defaultLanguage": "cpp"
 }
