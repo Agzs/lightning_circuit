@@ -9,12 +9,12 @@ Read: given `H1`, `H2`, and `X`, prove you know `R1` and `R2` such that `R1` is 
 
 ## Notes on getting it running
 
-* 1. run get-libsnark to git pull libsnark from github.com, 
+* 1. ``./get-libsnark``,r un get-libsnark to git pull libsnark from github.com, 
 * 2. checkout the version when lightning\_circuit was generated.
 ``cd depsrc/libsnark/ && git checkout 746ade7ce0f30a6f6e612e50450294c8e7ade9a4``
 * 3. Comment ``git pull`` in get-libsnark 
-* 4. run get-libsnark again
-* 5. ``make && .\test``
+* 4. run get-libsnark again, ``./get-libsnark``
+* 5. ``make && ./test``
 
 ## performance
 
@@ -30,7 +30,7 @@ on my computer (Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz):
 
 ## howto
 
-``./get-libsnark && make && ./test``
+``make && ./test``
 
 ## anatomy
 
